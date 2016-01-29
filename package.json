@@ -1,0 +1,32 @@
+{
+  "name": "gulp-git-diff",
+  "version": "1.0.0",
+  "description": "get the latest changed files which is compaired with the recently tag or master",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kidyfirst/gulp-diff-files.git"
+  },
+  "keywords": [
+    "git",
+    "diff"
+  ],
+  "author": "timlv",
+  "license": "MIT",
+  "bugs": {
+    "url": "http://github.com/kidyfirst/gulp-diff-files/issues"
+  },
+  "homepage": "http://github.com/kidyfirst/gulp-diff-files#readme",
+  "devDependencies": {
+    "event-stream": "^3.3.2",
+    "gulp": "^3.9.0",
+    "gulp-debug": "^2.0.1",
+    "gulp-shell": "^0.5.2",
+    "gulp-util": "^3.0.7",
+    "moment": "^2.11.1",
+    "through2": "^2.0.0"
+  }
+}

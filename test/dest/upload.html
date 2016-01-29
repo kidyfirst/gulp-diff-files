@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="telephone=no" name="format-detection" /><!--不识别电话号码-->
+    <meta content="email=no" name="format-detection" /><!--android忽略页面中的邮箱地址-->
+    <meta name="apple-mobile-web-status-bar-style" content="black" /><!--隐藏状态栏-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body{overflow: hidden;}
+    </style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="./module/upload/uploadfile.css" />
+	<title>上传</title>
+</head>
+<body>
+	<button type="button" id="getUpload" value="Get">Get</button>
+	<div id="uploadfilecon"></div>
+</body>
+<!--<script type="text/javascript" src="./lib/log4javascript.js"></script>-->
+<!--<script type="text/javascript" src="./lib/log4javascript-debug.js"></script>-->
+<script type="text/javascript">
+    var log = log4javascript.getLogger();
+    var popUpAppender = new log4javascript.PopUpAppender();
+    var popUpLayout = new log4javascript.PatternLayout("%d{HH:mm:ss} %-5p - %m%n");
+    popUpAppender.setLayout(popUpLayout);
+    log.addAppender(popUpAppender);
+</script>
+<script type="text/javascript" src="./lib/sea.js"></script>
+<script type="text/javascript">seajs.config({base : './'});</script>
+<script type="text/javascript">
+	seajs.use("module/upload/main.js");
+</script>
+</html>
